@@ -18,8 +18,8 @@
   <body data-bs-spy="scroll" data-bs-target=".navbar">
     <nav class="navbar bg-dark">
   <div class="container-fluid">
-    <button class="navbar-toggler btn-outline-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icon bg-primary"><i class="bi bi-list"></i></span>
+    <button class="navbar-toggler btn-outline-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon text-white"><i class="bi bi-list"></i></span>
     </button>
     <div class="offcanvas offcanvas-start" style="width:250px;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
@@ -49,13 +49,62 @@
               <li><a class="dropdown-item" href="sales&deals.html">Sales & Deals</a></li>
             </ul>
           </li>
+               <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-person-circle fs-2"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="#Settings">Settings</a></li>
+              <li><a class="dropdown-item" href="#help">Help</a></li>
+              <li><a class="dropdown-item" href="#orders">Orders</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#log-out">Log Out <i class="bi bi-arrow-right-circle"></i></a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
-    <form class="d-flex lg-ms-5" role="search"> 
-          <input type="search" class="form-control me-2" placeholder="Search ..." aria-label="Search"> 
-          <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
-        </form>  
+    <form class="d-flex lg-ms-5" role="search">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="search..." >
+        <div class="input-group-append">
+          <button class="btn btn-outline-primary" type="button" id="button-addon2"><i class="bi bi-search text-primary"></i></button>
+        </div>
+      </div>
+      <a class="nav-link" href="#"><i class="bi bi-cart4 text-primary "></i></a>
+      <a  class="nav-link" href="#"><i class="bi bi-people text-white " data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
+      <div class="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="exampleModalLabel">Log-in</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <p class="mx-auto-">You don't have account? <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Register Now</a>Please LOG-IN</p>
+              </form> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
   </div>
 </nav>
 <!--womens-->
@@ -120,10 +169,9 @@
           <div class="card h-100">
             <img src="./assets/images/e5.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h6 class="card-title text-center">Best Offer with <i class="bi bi-arrow-down"></i>65%</h6>
-              <h5 class="text-center"><strike class="text-muted">3500/-</strike>1499/-. Only</h5>
-              <p class="card-text">In INDIA most of the people used Kurtas for their festivals or traditional view.
-              Most of the men used their marriages.</p>
+              <h5 class="text-center">Laptop</h5>
+              <h6 class="text-center"><strike class="text-muted">150000/-</strike> 120000/-. only</h6>
+              <p class="card-title text-center">Best Offer with <i class="bi bi-arrow-down"></i>20%</p>
             </div>
           </div>
         </div>
@@ -131,9 +179,9 @@
     <div class="card h-100">
       <img src="./assets/images/e6.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title text-center">Best Offer with <i class="bi bi-arrow-down"></i>50%</h5>
-        <p class="card-text">This dress gives a best looks for men. It will shows you others how mentally strong you
-        are and how you manage the situation.</p>
+        <h5 class="text-center">Macbook</h5>
+              <h6 class="text-center"><strike>90000</strike> 45000/-. only</h6>
+              <p class="card-title text-center">Best Offer with <i class="bi bi-arrow-down"></i>50%</p>
       </div>
     </div>
   </div>
@@ -141,9 +189,9 @@
     <div class="card h-100">
       <img src="./assets/images/e7.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title text-center">Best Offer with <i class="bi bi-arrow-down"></i>20%</h5>
-        <p class="card-text">This dress gives you a dynamic look. And also it gives a Royal look for when you wear it.
-        The black suit gives to you look a strong person</p>
+        <h5 class="text-center">Mobiles</h5>
+              <h6 class="text-center"><strike>45000</strike> 36000/-. only</h6>
+              <p class="card-title text-center">Best Offer with <i class="bi bi-arrow-down"></i>20%</p>
       </div>
     </div>
   </div>
@@ -151,9 +199,9 @@
     <div class="card h-100">
       <img src="./assets/images/e8.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title text-center">Best Offer with <i class="bi bi-arrow-down"></i>70%</h5>
-        <p class="card-text">This mens wear will be give to younger look for you. It gives you a simple view and you give 
-        good impression for them  </p>
+        <h5 class="text-center">Earpods</h5>
+              <h6 class="text-center"><strike>4000</strike> 1600/-. only</h6>
+              <p class="card-title text-center">Best Offer with <i class="bi bi-arrow-down"></i>60%</p>
       </div>
     </div>
   </div>
@@ -161,9 +209,9 @@
     <div class="card h-100">
       <img src="./assets/images/e9.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title text-center">Best Offer with <i class="bi bi-arrow-down"></i>45%</h5>
-        <p class="card-text">This coat will be shows you other to be like your a chill guy. And also you give a your a cool in 
-        personality </p>
+        <h5 class="text-center">Head Phones</h5>
+              <h6 class="text-center"><strike>9000</strike> 4500/-. only</h6>
+              <p class="card-title text-center">Best Offer with <i class="bi bi-arrow-down"></i>50%</p>
       </div>
     </div>
   </div>
@@ -171,8 +219,9 @@
     <div class="card h-100">
       <img src="./assets/images/e10.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title text-center">Best Offer with <i class="bi bi-arrow-down"></i>30%</h5>
-        <p class="card-text">This Jacket gives to first impression with your a smart guy and cool behaviour. </p>
+        <h5 class="text-center">Camera</h5>
+              <h6 class="text-center"><strike class="text-muted">125000/-</strike> 120000/-. only</h6>
+              <p class="card-title text-center">Best Offer with <i class="bi bi-arrow-down"></i>20%</p>
       </div>
     </div>
   </div>
@@ -185,52 +234,46 @@
   <div class="container mt-5">
     <div class="row">
       <div class="col-12 text-center">
-        <h1>Womens Accessories</h1>
+        <h1>Electronic Accessories</h1>
         <div class="divider"></div>
         <div class="row">
           <div class="col-md-4">
             <div><img src="./assets/images/e11.jpg"></div>
             <h5 class="mt-4 mb-3">CAM LENS</h5>
-            <p>They are handmade jewelry to sell in<br>
-               online by made of tribles to their
-               income.</p>
+            <h6 class="text-center"><strike>25000</strike> 14000/-. only</h6>
+              <p class="text-center">Best Offer with <i class="bi bi-arrow-down"></i>20%</p>
           </div>
           <div class="col-md-4">
             <div><img src="./assets/images/e12.jpg"></div>
             <h5 class="mt-4 mb-3">T.V</h5>
-            <p>They are handlooming clothes to sell<br> in
-               online by made of tribles to their
-               income.</p>
+            <h6 class="text-center"><strike>45000</strike> 36000/-. only</h6>
+              <p class="text-center">Best Offer with <i class="bi bi-arrow-down"></i>30%</p>
           </div>
           <div class="col-md-4">
             <div><img src="./assets/images/e13.jpg"></div>
             <h5 class="mt-4 mb-3">REMOTE</h5>
-            <p>They are handmade jewelry to sell in<br>
-               online by made of tribles to their
-               income.</p>
+            <h6 class="text-center"><strike>1700</strike> 1360/-. only</h6>
+              <p class="text-center">Best Offer with <i class="bi bi-arrow-down"></i>20%</p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4">
             <div><img src="./assets/images/e14.jpg"></div>
             <h5 class="mt-4 mb-3">SPEAKER</h5>
-            <p>They are handmade furniture to sell in<br>
-               online by made of tribles to their
-               income.</p>
+            <h6 class="text-center"><strike>12000</strike> 8000/-. only</h6>
+              <p class="text-center">Best Offer with <i class="bi bi-arrow-down"></i>40%</p>
           </div>
           <div class="col-md-4">
             <div><img src="./assets/images/e15.jpg"></div>
             <h5 class="mt-4 mb-3">HOTSPOT</h5>
-            <p>They are handlooming decorative to sell<br> in
-               online by made of tribles to their
-               income.</p>
+            <h6 class="text-center"><strike>9000</strike> 6300/-. only</h6>
+              <p class="text-center">Best Offer with <i class="bi bi-arrow-down"></i>30%</p>
           </div>
           <div class="col-md-4">
             <div><img src="./assets/images/e16.jpg"></div>
             <h5 class="mt-4 mb-3">SMART WATCHES</h5>
-            <p>They are handmade kitchen to sell in<br>
-               online by made of tribles to their
-               income.</p>
+            <h6 class="text-center"><strike>4500</strike> 3600/-. only</h6>
+              <p class="text-center">Best Offer with <i class="bi bi-arrow-down"></i>20%</p>
           </div>
         </div>
       </div>

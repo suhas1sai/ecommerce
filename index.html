@@ -18,8 +18,8 @@
   <body data-bs-spy="scroll" data-bs-target=".navbar">
     <nav class="navbar bg-dark">
   <div class="container-fluid">
-    <button class="navbar-toggler btn-outline-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icon bg-primary"><i class="bi bi-list"></i></span>
+    <button class="navbar-toggler btn-outline-light  justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon text-white"><i class="bi bi-list"></i></span>
     </button>
     <div class="offcanvas offcanvas-start" style="width:250px;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
@@ -49,13 +49,65 @@
               <li><a class="dropdown-item" href="sales&deals.html">Sales & Deals</a></li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html"><i class="bi bi-cart4 text-primary fs-2"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-person-circle fs-2"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="#Settings">Settings</a></li>
+              <li><a class="dropdown-item" href="#help">Help</a></li>
+              <li><a class="dropdown-item" href="#orders">Orders</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#log-out">Log Out <i class="bi bi-arrow-right-circle"></i></a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
-    <form class="d-flex lg-ms-5" role="search"> 
-          <input type="search" class="form-control me-1" placeholder="Search ..." aria-label="Search"> 
-          <button class="btn btn-outline-primary me-1" type="submit"><i class="bi bi-search"></i></button>
-        </form>
+    <form class="d-flex lg-ms-5" role="search">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="search..." >
+        <div class="input-group-append">
+          <button class="btn btn-outline-primary" type="button" id="button-addon2"><i class="bi bi-search text-primary"></i></button>
+        </div>
+      </div>
+      <a class="nav-link" href="#"><i class="bi bi-cart4 text-primary "></i></a>
+      <a  class="nav-link" href="#"><i class="bi bi-people text-white " data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
+      <div class="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="exampleModalLabel">Log-in</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <p class="mx-auto-">You don't have account? <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Register Now</a>Please LOG-IN</p>
+              </form> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
      
     
 
@@ -64,6 +116,7 @@
   </div>
 </nav>
 <!--Home-->
+<div class="container">
 <section>
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
   <div class="carousel-indicators">
@@ -111,29 +164,34 @@
   <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-100">
-      <img src="./assets/images/men1.jpg" class="card-img-top" alt="...">
+      <a href="men.html"><img src="./assets/images/men1.jpg" class="card-img-top" alt="..."></a>
       <div class="card-body">
-        <h5 class="card-title">Best Offer <i class="bi bi-arrow-down"></i>35%</h5>
-        <p class="card-text">This is the best we provided the best quality and price.</p>
+        <h5 class="text-center">Formals</h5>
+        <h6 class="text-center"><strike>1500</strike> 1199/-only</h6>
+        <p class="card-title text-center">Best Offer <i class="bi bi-arrow-down"></i>35%</p>
+        
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="./assets/images/men2.jpg" class="card-img-top" alt="...">
+      <a href="men.html"><img src="./assets/images/men2.jpg" class="card-img-top" alt="..."></a>
       <div class="card-body">
-        <h5 class="card-title">Best Offer <i class="bi bi-arrow-down"></i>20%</h5>
-        <p class="card-text">This is the best we provided the best quality and price.</p>
+        <h5 class="text-center">Suits</h5>
+        <h6 class="text-center"><strike>7200</strike> 5000/- only</h6>
+        <p class="card-title text-center">Best Offer <i class="bi bi-arrow-down"></i>20%</p>
+        
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="./assets/images/men3.jpg" class="card-img-top" alt="...">
+      <a href="men.html"><img src="./assets/images/men3.jpg" class="card-img-top" alt="..."></a>
       <div class="card-body">
-        <h5 class="card-title">Best Offer <i class="bi bi-arrow-down"></i>50%</h5>
-        <p class="card-text">This is the best we provided the best quality and price.</p>
-      </div>
+        <h5 class="text-center">Shirts</h5>
+        <h6 class="text-center"><strike>1500</strike> 750/- only</h6>
+        <p class="card-title text-center">(Best Offer <i class="bi bi-arrow-down"></i>50%)</p>
+        </div>
     </div>
   </div>
 </div>
@@ -143,28 +201,31 @@
   <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-100">
-      <img src="./assets/images/lady.jpg" class="card-img-top" alt="...">
+     <a href="women.html"> <img src="./assets/images/lady.jpg" class="card-img-top" alt="..."></a>
       <div class="card-body">
-        <h5 class="card-title">Best Offer <i class="bi bi-arrow-down"></i>35%</h5>
-        <p class="card-text">This is the best we provided the best quality and price.</p>
+        <h5 class="text-center">Aanarkali</h5>
+        <h6 class="text-center"><strike>2500</strike> 1250/- only</h6>
+        <p class="card-title text-center">(Best Offer <i class="bi bi-arrow-down"></i>50%)</p>  
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="./assets/images/ladyy.jpg" class="card-img-top" alt="...">
+      <a href="women.html"><img src="./assets/images/ladyy.jpg" class="card-img-top" alt="..."></a>
       <div class="card-body">
-        <h5 class="card-title">Best Offer <i class="bi bi-arrow-down"></i>20%</h5>
-        <p class="card-text">This is the best we provided the best quality and price.</p>
+        <h5 class="text-center">Western Forck</h5>
+        <h6 class="text-center"><strike>3000</strike> 1500/- only</h6>
+        <p class="card-title text-center">(Best Offer <i class="bi bi-arrow-down"></i>50%)</p>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="./assets/images/ladyyy.jpg" class="card-img-top" alt="...">
+      <a href="women.html"><img src="./assets/images/ladyyy.jpg" class="card-img-top" alt="..."></a>
       <div class="card-body">
-        <h5 class="card-title">Best Offer <i class="bi bi-arrow-down"></i>50%</h5>
-        <p class="card-text">This is the best we provided the best quality and price.</p>
+        <h5 class="text-center">Punjabi Dress</h5>
+        <h6 class="text-center"><strike>1000</strike> 500/- only</h6>
+        <p class="card-title text-center">(Best Offer <i class="bi bi-arrow-down"></i>50%)</p>
       </div>
     </div>
   </div>
@@ -175,28 +236,31 @@
   <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-100">
-      <img src="./assets/images/kidoi.jpg" class="card-img-top" alt="...">
+      <a href="kids.html"><img src="./assets/images/kidoi.jpg" class="card-img-top" alt="..."></a>
       <div class="card-body">
-        <h5 class="card-title">Best Offer <i class="bi bi-arrow-down"></i>35%</h5>
-        <p class="card-text">This is the best we provided the best quality and price.</p>
+        <h5 class="text-center">Shirts</h5>
+        <h6 class="text-center"><strike>1000</strike> 500/- only</h6>
+        <p class="card-title text-center">(Best Offer <i class="bi bi-arrow-down"></i>50%)</p>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="./assets/images/kidois.jpg" class="card-img-top" alt="...">
+      <a href="kids.html"><img src="./assets/images/kidois.jpg" class="card-img-top" alt="..."></a>
       <div class="card-body">
-        <h5 class="card-title">Best Offer <i class="bi bi-arrow-down"></i>20%</h5>
-        <p class="card-text">This is the best we provided the best quality and price.</p>
+        <h5 class="text-center">kids Suit</h5>
+        <h6 class="text-center"><strike>3000</strike> 1500/- only</h6>
+        <p class="card-title text-center">(Best Offer <i class="bi bi-arrow-down"></i>50%)</p>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="./assets/images/kk.jpg" class="card-img-top" alt="...">
+      <a href="kids.html"><img src="./assets/images/kk.jpg" class="card-img-top" alt="..."></a>
       <div class="card-body">
-        <h5 class="card-title">Best Offer <i class="bi bi-arrow-down"></i>50%</h5>
-        <p class="card-text">This is the best we provided the best quality and price.</p>
+        <h5 class="text-center">Kids Wear</h5>
+        <h6 class="text-center"><strike>1500</strike> 750/- only</h6>
+        <p class="card-title text-center">(Best Offer <i class="bi bi-arrow-down"></i>50%)</p> 
       </div>
     </div>
   </div>
@@ -207,33 +271,37 @@
   <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-100">
-      <img src="./assets/images/mi.jpg" class="card-img-top" alt="...">
+      <a href="elctronics.html"><img src="./assets/images/mi.jpg" class="card-img-top" alt="..."></a>
       <div class="card-body">
-        <h5 class="card-title">Best Offer <i class="bi bi-arrow-down"></i>35%</h5>
-        <p class="card-text">This is the best we provided the best quality and price.</p>
+        <h5 class="text-center">Redmi</h5>
+        <h6 class="text-center"><strike>12000</strike> 9000/- only</h6>
+        <p class=" text-center">(Best Offer <i class="bi bi-arrow-down"></i>30%)</p>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="./assets/images/sam.jpg" class="card-img-top" alt="...">
+      <a href="elctronics.html"><img src="./assets/images/sam.jpg" class="card-img-top" alt="..."></a>
       <div class="card-body">
-        <h5 class="card-title">Best Offer <i class="bi bi-arrow-down"></i>20%</h5>
-        <p class="card-text">This is the best we provided the best quality and price.</p>
+        <h5 class="text-center">Samsung</h5>
+        <h6 class="text-center"><strike>16000</strike> 12500/- only</h6>
+        <p class="card-title text-center">(Best Offer <i class="bi bi-arrow-down"></i>35%)</p>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="./assets/images/infinix.jpg" class="card-img-top" alt="...">
+      <a href="elctronics.html"><img src="./assets/images/infinix.jpg" class="card-img-top" alt="..."></a>
       <div class="card-body">
-        <h5 class="card-title">Best Offer <i class="bi bi-arrow-down"></i>50%</h5>
-        <p class="card-text">This is the best we provided the best quality and price.</p>
+        <h5 class="text-center">Infinix</h5>
+        <h6 class="text-center"><strike>18,000</strike> 15,400/- only</h6>
+        <p class="card-title text-center">(Best Offer <i class="bi bi-arrow-down"></i>20%)</p>
       </div>
     </div>
   </div>
 </div>
 </section>
+</div>
 
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-dark text-muted">
